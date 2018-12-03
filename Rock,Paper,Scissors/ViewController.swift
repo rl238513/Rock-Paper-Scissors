@@ -15,6 +15,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    let number = Int.random(in: 0 ... 4)
+    
+    
+    
+    func victory() ->  {
+        if ()||()||()
+    }
 }
 
