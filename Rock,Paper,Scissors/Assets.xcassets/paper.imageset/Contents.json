@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "scissors.png",
+      "filename" : "paper-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "scissors-1.png",
+      "filename" : "paper-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "scissors-2.png",
+      "filename" : "paper.png",
       "scale" : "3x"
     }
   ],
