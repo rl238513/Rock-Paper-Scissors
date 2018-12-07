@@ -10,17 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var systemChoice: UIImageView!
+    @IBOutlet weak var winnerLabel: UILabel!
+    @IBOutlet weak var winnerImage: UIImageView!
+    @IBOutlet weak var backgroundImmage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    let number = Int.random(in: 0 ... 4)
     
-    
-    
-    func victory() ->  {
-        if ()||()||()
+    @IBAction func paperButton(_ sender: Any) {
     }
+    
+    @IBAction func rockButton(_ sender: Any) {
+    }
+    
+    @IBAction func scissorButton(_ sender: Any) {
+    }
+    
 }
-

@@ -21,26 +21,53 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dhmis-1 copy" translatesAutoresizingMaskIntoConstraints="NO" id="t3Z-yX-Inf">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jUu-Wg-1Z1">
+                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jUu-Wg-1Z1">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock win" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-am-fSr">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
-                                    </imageView>
+                                    <stackView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f61-xO-2Vg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock win" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqM-he-ef2">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    you win!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRg-Xb-G6y">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="54"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cpg-r0-d5i">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="162"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VS" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-am-fSr">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6j0-dc-C8y">
-                                        <rect key="frame" x="0.0" y="547" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="485.5" width="375" height="161.5"/>
                                         <subviews>
                                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUy-lj-Ca4">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="161.5"/>
                                                 <state key="normal" title="Paper" image="paper"/>
+                                                <connections>
+                                                    <action selector="paperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s92-be-3s3"/>
+                                                </connections>
                                             </button>
                                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdu-Ey-yJn">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="100"/>
+                                                <rect key="frame" x="125" y="0.0" width="125" height="161.5"/>
                                                 <state key="normal" title="Rock" image="rock"/>
+                                                <connections>
+                                                    <action selector="rockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGr-ZQ-Do5"/>
+                                                </connections>
                                             </button>
                                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohn-bR-JJ1">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="100"/>
+                                                <rect key="frame" x="250" y="0.0" width="125" height="161.5"/>
                                                 <state key="normal" title="Scissors" image="scissors"/>
+                                                <connections>
+                                                    <action selector="scissorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8PJ-eb-3Ni"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -60,6 +87,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImmage" destination="t3Z-yX-Inf" id="zbV-nX-YIP"/>
+                        <outlet property="systemChoice" destination="aqM-he-ef2" id="JB4-aR-SUr"/>
+                        <outlet property="winnerImage" destination="aZs-am-fSr" id="4p8-mf-76W"/>
+                        <outlet property="winnerLabel" destination="iRg-Xb-G6y" id="Fx7-Y1-tzZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,6 +100,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="VS" width="1066.800048828125" height="600"/>
         <image name="dhmis-1 copy" width="144" height="274"/>
         <image name="paper" width="100" height="127"/>
         <image name="rock" width="100" height="100"/>
