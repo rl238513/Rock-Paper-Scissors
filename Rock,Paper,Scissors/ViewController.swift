@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var winnerImage: UIImageView!
     @IBOutlet weak var backgroundImmage: UIImageView!
     
+    var pictureArray = [#imageLiteral(resourceName: "paper.png"), #imageLiteral(resourceName: "rock.png"), #imageLiteral(resourceName: "scissors.png")]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,5 +29,15 @@ class ViewController: UIViewController {
     
     @IBAction func scissorButton(_ sender: Any) {
     }
+    
+    func systemPicture {
+        systemChoice.image = pictureArray [randomInt]
+    }
+    
+    let randomInt = Int.random(in: 0..<3)
+    
+    
+    
+    
     
 }
