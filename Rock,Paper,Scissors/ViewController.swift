@@ -30,9 +30,9 @@ class ViewController: UIViewController {
     @IBAction func scissorButton(_ sender: Any) {
     }
     
-    func systemPicture {
+    func systemPicture {(
         systemChoice.image = pictureArray [randomInt]
-    }
+    )}
     
     let randomInt = Int.random(in: 0..<3)
     
